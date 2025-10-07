@@ -295,6 +295,17 @@
             </div>
         </section>
 
+        <section id="newsletter" class="section section-light">
+            <div class="container">
+                <h2 class="section-title">Assine Nossa Newsletter</h2>
+                <p class="section-subtitle">Receba as últimas novidades, dicas e ofertas diretamente no seu e-mail.</p>
+                <form id="newsletter-form" action="#" method="post">
+                    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit" class="btn-submit">Inscrever-se</button>
+                </form>
+            </div>
+        </section>
+
         <section id="contact" class="section section-light">
             <div class="container">
                 <h2 class="section-title">Entre em Contato</h2>
@@ -318,6 +329,27 @@
                     </div>
                     <button type="submit" class="btn-submit">Enviar Mensagem</button>
                 </form>
+            </div>
+        </section>
+
+        <section id="partners" class="section">
+            <div class="container">
+                <h2 class="section-title">Nossos Parceiros</h2>
+                <p class="section-subtitle">Empresas que confiam em nosso trabalho e colaboram para o sucesso mútuo.</p>
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150" alt="Logo do Parceiro 1">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150" alt="Logo do Parceiro 2">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150" alt="Logo do Parceiro 3">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150" alt="Logo do Parceiro 4">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -357,6 +389,12 @@
         <div class="footer-bottom">
             <p>&copy; 2025 MeuProjeto. Todos os direitos reservados. Feito com &hearts; em Sorocaba, SP.</p>
         </div>
+        <script>
+            // Atualiza o ano automaticamente no rodapé
+            const footerYear = document.querySelector('.footer-bottom p');
+            const currentYear = new Date().getFullYear();
+            footerYear.innerHTML = `&copy; ${currentYear} MeuProjeto. Todos os direitos reservados. Feito com &hearts; em Sorocaba, SP.`;
+        </script>
     </footer>
 
 </body>
