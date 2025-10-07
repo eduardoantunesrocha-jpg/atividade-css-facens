@@ -3,42 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Box Model e Flexbox</title>
+
+    <title>Página Expandida | Box Model e Flexbox</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Demonstração de Box Model e Flexbox</h1>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">MeuProjeto</h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="flex-container">
-        <div class="flex-item item-1">Item 1</div>
-        <div class="flex-item item-2">Item 2</div>
-        <div class="flex-item item-3">Item 3</div>
-        <div class="flex-item item-4">Item 4</div>
-        <div class="flex-item item-5">Item 5</div>
-        <div class="flex-item item-6">Item 6</div>
-        <div class="flex-item item-7">Item 7</div>
-        <div class="flex-item item-8">Item 8</div>
-        <div class="flex-item item-9">Item 9</div>
-        <div class="flex-item item-10">Item 10</div>
-        <div class="flex-item item-11">Item 11</div>
-        <div class="flex-item item-12">Item 12</div>
-        <div class="flex-item item-13">Item 13</div>
-        <div class="flex-item item-14">Item 14</div>
-        <div class="flex-item item-15">Item 15</div>
-        <div class="flex-item item-16">Item 16</div>
-        <div class="flex-item item-17">Item 17</div>
-        <div class="flex-item item-18">Item 18</div>
-        <div class="flex-item item-19">Item 19</div>
-        <div class="flex-item item-20">Item 20</div>
-        </main>
+    <main>
 
-        <!--Rodape-->
-    <footer>
-        <p>Atividade realizada para a disciplina de Web Design.</p>
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Soluções criativas para impulsionar seus resultados.</p>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Web Design</h3>
+                        <p>Criamos interfaces bonitas e intuitivas que proporcionam uma excelente experiência de usuário.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Desenvolvimento Front-End</h3>
+                        <p>Codificamos designs em HTML, CSS e JavaScript, garantindo responsividade e performance.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Otimização SEO</h3>
+                        <p>Melhoramos a visibilidade do seu site nos motores de busca para atrair mais clientes.</p>
+                    </article>
+                     <article class="service-card">
+                        <h3>Consultoria de UI/UX</h3>
+                        <p>Analisamos e aprimoramos a usabilidade e a experiência geral do seu produto digital.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section section-light">
+            <div class="container">
+                <h2 class="section-title">Galeria de Projetos</h2>
+                <p class="section-subtitle">Uma amostra do nosso trabalho e da nossa criatividade em ação.</p>
+                <div class="gallery-grid">
+                    <img src="https://picsum.photos/id/101/400/300" alt="Projeto 1">
+                    <img src="https://picsum.photos/id/102/400/300" alt="Projeto 2">
+                    <img src="https://picsum.photos/id/103/400/300" alt="Projeto 3">
+                    <img src="https://picsum.photos/id/104/400/300" alt="Projeto 4">
+                    <img src="https://picsum.photos/id/106/400/300" alt="Projeto 5">
+                    <img src="https://picsum.photos/id/108/400/300" alt="Projeto 6">
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                 <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+                 <p class="section-subtitle">Feedback de quem confia em nosso trabalho.</p>
+            </div>
+            <div class="flex-container">
+                <div class="flex-item item-1">Item 1</div>
+                <div class="flex-item item-2">Item 2</div>
+                <div class="flex-item item-3">Item 3</div>
+                <div class="flex-item item-4">Item 4</div>
+                <div class="flex-item item-5">Item 5</div>
+                <div class="flex-item item-6">Item 6</div>
+                <div class="flex-item item-7">Item 7</div>
+                <div class="flex-item item-8">Item 8</div>
+                <div class="flex-item item-9">Item 9</div>
+                <div class="flex-item item-10">Item 10</div>
+                <div class="flex-item item-11">Item 11</div>
+                <div class="flex-item item-12">Item 12</div>
+                <div class="flex-item item-13">Item 13</div>
+                <div class="flex-item item-14">Item 14</div>
+                <div class="flex-item item-15">Item 15</div>
+                <div class="flex-item item-16">Item 16</div>
+                <div class="flex-item item-17">Item 17</div>
+                <div class="flex-item item-18">Item 18</div>
+                <div class="flex-item item-19">Item 19</div>
+                <div class="flex-item item-20">Item 20</div>
+                </div>
+        </section>
+
+        <section id="contact" class="section section-light">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Envie-nos uma mensagem e retornaremos em breve.</p>
+                <form id="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Sobre o que gostaria de falar?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Sua Mensagem</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-section about">
+                <h4>Sobre MeuProjeto</h4>
+                <p>Somos um estúdio de design digital focado em criar experiências memoráveis na web.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h4>Contato</h4>
+                <p>Email: contato@meuprojeto.com</p>
+                <p>Telefone: (15) 99999-8888</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MeuProjeto. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 </body>
 </html>
+
